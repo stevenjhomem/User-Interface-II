@@ -1,1 +1,95 @@
-/* Add CSS styling here */
+*{
+    font-family: 'Rubik', sans-serif;
+    font-serif: 'Cardo', serif;
+    text-align: center;
+    background-color: whitesmoke;
+    font-size: 1.75 rem;
+}
+
+body, img, .intro-img-container{
+    border: 1rem solid #172435;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+a{
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1), 
+    0 2px 2px rgba(0,0,0,0.1), 
+    0 4px 4px rgba(0,0,0,0.1), 
+    0 8px 8px rgba(0,0,0,0.1),
+    0 16px 16px rgba(0,0,0,0.1);
+    display: flex;
+    text-decoration:none;
+    border-radius: .5rem;
+    justify-content: center;
+    height: 3rem;
+    width: 6rem;
+    align-items:center;
+    background-color:#e8dbca;
+    color: black;
+    margin-top: .3rem;
+    margin-bottom: .3rem;
+    margin-left: .3rem;
+    margin-right: .3;
+    border: .5rem solid #172435;
+  }
+
+
+.intro-img-container{
+    display: block;
+    height: 60rem;
+    background-image: url(../Pictures/us_in_yellow.JPG);
+    background-size: cover;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1), 
+    0 2px 2px rgba(0,0,0,0.1), 
+    0 4px 4px rgba(0,0,0,0.1), 
+    0 8px 8px rgba(0,0,0,0.1),
+    0 16px 16px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    margin-left: 1.3rem;
+    margin-right: 1.3rem;
+}
+
+img{
+    width: 17%;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1), 
+    0 2px 2px rgba(0,0,0,0.1), 
+    0 4px 4px rgba(0,0,0,0.1), 
+    0 8px 8px rgba(0,0,0,0.1),
+    0 16px 16px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    margin-top: .3rem;
+    margin-bottom: .3rem;
+    margin-left: .3rem;
+    margin-right: 2rem;
+}
+
+.small-gallery{
+    display: flex;
+    justify-content: flex-start;;
+    height:20%;
+    background-size: cover;
+    padding: 1%;
+}
+
+
+
+.picture-info{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin: auto;
+    border: 1rem solid whitesmoke;
+}
+
+footer{
+    background-color:whitesmoke;
+    display: flex; 
+    justify-content: center;
+    height: 10rem;
+    align-items: center;
+}
