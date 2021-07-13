@@ -1,1 +1,277 @@
-/* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+*{
+    box-sizing: border-box;/*Respect the width I have given you. If I add padding or border apply it within the width of the parent element*/
+    padding: 0;
+    margin: 0;
+    max-height:100%;
+    max-width:100%;/*You can never be bigger than your parent. This stops the horizonatl scroll bar*/
+}
+
+/*General Styles. Styles that will apply across the whole website*/
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    line-height: 1.5;
+    font-size: 1.8rem;
+    background-color:  #666666;
+    color: whitesmoke;
+    font-family:'Rubik', sans-serif;
+}
+
+h1, h2, h3, h4{
+    font-family:'Rubik', sans-serif;
+    text-align: center;
+}
+
+h1{
+    font-size: 6rem;
+    font-style: italic;
+    color: whitesmoke;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+h3{
+    font-size: 2.5rem;
+}
+
+a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: whitesmoke;
+    background-color: #1e1e1a;
+    border: 2px solid #839999;
+    height: 8vh;
+    width: 11%;
+}
+
+/*Header Section Styles*/
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.name{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* Main section of website*/
+
+#home{
+    height: 90vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-text{
+    display:flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+}
+
+.home-text-paragraph{
+    text-align: center;
+}
+
+.us-in-yellow{
+    background-image:url('/Pictures/us_in_yellow.JPG');
+    background-size: cover;
+    height: 70vh;
+    width: 100%;
+    background-position-y: 70%;
+    
+}
+
+.small-gallery{
+    display: flex;
+    height: 50vh;
+
+}
+
+.small-pics-1{
+    width: 20%;
+    background-image:url('/Pictures/marble\ artistry.JPG');
+    background-size: cover;
+}
+
+.small-pics-2{
+    width: 20%;
+    background-image:url('/Pictures/great\ hall.JPG');
+    background-size: cover;
+}
+
+.small-pics-3{
+    width: 20%;
+    background-image:url('/Pictures/corner\ house.JPG');
+    background-size: cover;
+}
+
+.small-pics-4{
+    width: 20%;
+    background-image:url('/Pictures/cathedral.JPG');
+    background-size: cover;
+}
+
+.small-pic-text{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20%;
+}
+.small-pic-text p{
+    text-align: center;
+}
+
+
+/*Footer Stylings*/
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 15vh;
+}
+
+footer a{
+    text-align: center;
+}
+
+/*Media Queries*/
+@media(max-width: 500px){
+
+    h1{
+        font-size: 4.5rem;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+    }
+    
+    a{
+        width: 25%;
+    }
+
+    #home{
+        height: 70vh;
+    }
+
+    #home h2{
+        padding: 8%;
+        letter-spacing: 1rem;
+    }
+
+    .home-text{
+        width:80%;
+        margin-bottom: 7.5%;
+    }
+
+    .us-in-yellow{
+        height: 30vh;
+        margin-bottom: 7.5%;
+    }
+
+    .small-gallery{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap:wrap;
+        height: 150vh;
+    }
+
+    .small-pics-1{
+        width: 40%;
+        height: 50vh;
+    }
+    
+    .small-pics-2{
+        width: 40%;
+        height: 50vh;
+    }
+    
+    .small-pics-3{
+        width: 40%;
+        height: 50vh;
+    }
+    
+    .small-pics-4{
+        width: 40%;
+        height: 50vh;
+    }
+    
+    .small-pic-text{
+        font-size: 1.5rem;
+        width: 80%;
+        height: 20vh;
+    }
+
+}
